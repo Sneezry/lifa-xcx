@@ -1,0 +1,145 @@
+.page {
+  padding: 48rpx 32rpx 80rpx;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx 12rpx 42rpx;
+}
+
+.eyebrow {
+  color: #4867aa;
+  font-size: 25rpx;
+  font-weight: 600;
+  letter-spacing: 3rpx;
+}
+
+.title {
+  margin-top: 16rpx;
+  font-size: 52rpx;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 12rpx;
+  color: #63718b;
+  font-size: 28rpx;
+}
+
+.card {
+  padding: 36rpx;
+  border-radius: 24rpx;
+  background: #fff;
+  box-shadow: 0 12rpx 40rpx rgba(27, 44, 80, 0.06);
+}
+
+.field-label {
+  display: block;
+  font-size: 29rpx;
+  font-weight: 600;
+}
+
+.client-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 94rpx;
+  margin-top: 18rpx;
+  padding: 0 20rpx;
+  border: 2rpx solid #dce3f0;
+  border-radius: 12rpx;
+  font-size: 25rpx;
+}
+
+.hint {
+  display: block;
+  margin-top: 14rpx;
+  color: #63718b;
+  font-size: 24rpx;
+}
+
+.mode-label {
+  margin-top: 48rpx;
+}
+
+.choices {
+  display: block;
+  margin-top: 18rpx;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 18rpx;
+  border: 2rpx solid #e3e8f2;
+  border-radius: 14rpx;
+}
+
+.choice + .choice {
+  margin-top: 18rpx;
+}
+
+.is-selected {
+  border-color: #3659d9;
+  background: #f5f7ff;
+}
+
+.choice-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rpx;
+}
+
+.choice-title {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.choice-description {
+  margin-top: 6rpx;
+  color: #63718b;
+  font-size: 24rpx;
+}
+
+.submit-button {
+  margin-top: 48rpx;
+  background: #3659d9;
+  font-size: 30rpx;
+}
+
+.error {
+  display: block;
+  margin-top: 24rpx;
+  color: #ad2935;
+  font-size: 26rpx;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28rpx;
+}
+
+.result-title {
+  color: #176444;
+  font-size: 31rpx;
+  font-weight: 600;
+}
+
+.result-validity {
+  margin-top: 14rpx;
+  font-size: 27rpx;
+}
+
+.result-link {
+  margin-top: 22rpx;
+  overflow-wrap: anywhere;
+  color: #3659d9;
+  font-size: 25rpx;
+}
+
+.copy-button {
+  margin-top: 32rpx;
+  color: #3659d9;
+  font-size: 28rpx;
+}

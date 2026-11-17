@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="hero">
+    <text class="eyebrow">力法工具箱</text>
+    <text class="title">许可签发</text>
+    <text class="subtitle">填写客户端 ID，选择许可有效期。</text>
+  </view>
+
+  <view class="card">
+    <text class="field-label">客户端 ID</text>
+    <input class="client-input" type="text" value="{{clientId}}" bindinput="onClientIdInput"
+      maxlength="36" disabled="{{loading}}" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />
+    <text class="hint">可在力法工具箱中查看客户端 ID。</text>
+
+    <text class="field-label mode-label">许可类型</text>
+    <radio-group class="choices" bindchange="onModeChange">
+      <label class="choice {{mode === 'short' ? 'is-selected' : ''}}">
+        <radio value="short" checked="{{mode === 'short'}}" disabled="{{loading}}" color="#3659d9" />
+        <view class="choice-content">
+          <text class="choice-title">短期许可</text>
+          <text class="choice-description">签发后有效 1 天</text>
+        </view>
+      </label>
+      <label class="choice {{mode === 'permanent' ? 'is-selected' : ''}}">
+        <radio value="permanent" checked="{{mode === 'permanent'}}" disabled="{{loading}}" color="#3659d9" />
+        <view class="choice-content">
+          <text class="choice-title">永久许可</text>
+          <text class="choice-description">长期有效，不附加到期时间</text>
+        </view>
+      </label>
+    </radio-group>
+
+    <button class="submit-button" type="primary" loading="{{loading}}" disabled="{{loading}}" bindtap="onSubmit">
+      {{loading ? '签发中…' : '签发许可'}}
+    </button>
+    <text wx:if="{{error}}" class="error" role="alert">{{error}}</text>
+  </view>
+
+  <view wx:if="{{result}}" class="card result-card">
+    <text class="result-title">签发成功</text>
+    <text class="result-validity">有效期：{{validity}}</text>
+    <text class="result-link" selectable="true">{{result.downloadUrl}}</text>
+    <button class="copy-button" bindtap="onCopyLink">复制下载链接</button>
+  </view>
+</view>

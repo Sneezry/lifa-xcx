@@ -1,0 +1,10 @@
+node_modules/
+project.private.config.json
+local.settings.json
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.p8
+*.publishsettings

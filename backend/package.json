@@ -1,0 +1,14 @@
+{
+  "name": "lifa-license-issuer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@azure/functions": "4.17.1",
+    "@azure/storage-blob": "12.17.0",
+    "lifa-license-miniprogram": "file:.."
+  }
+}

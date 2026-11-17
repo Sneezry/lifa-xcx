@@ -1,0 +1,12 @@
+{
+  "name": "lifa-license-miniprogram",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test backend/license.test.js backend/index.test.js tests/page.test.js",
+    "upload": "node scripts/upload.js"
+  },
+  "devDependencies": {
+    "miniprogram-ci": "2.1.31"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "appid": "wx5b0addc610a9b8b9",
+  "projectname": "lifa-license",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "miniprogram/",
+  "setting": {
+    "es6": true,
+    "urlCheck": true
+  }
+}
